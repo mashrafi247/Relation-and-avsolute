@@ -1,0 +1,148 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu{
+    display: flex;
+    width: 1000px;
+    justify-content: center;
+    justify-items: center;
+    margin: auto;
+    color: azure;
+
+}
+.menu h2{
+    margin-top: 100px;
+}
+.container{
+    width: 100%;
+    margin: auto;
+    height: 100vh;
+
+}
+.menu ul{
+    list-style: none;
+
+}
+
+.food_banner{    width: 100%;
+    height: 100vh;
+    
+    
+}
+.menu ul li{
+    display: inline-block;
+}
+.menu ul li a{
+
+text-decoration: none;
+padding: 15px 20px ;
+color: #050505;
+display: inline-block;
+transition: 0.3s;
+font-size: 18px;
+font-family: Arial, Helvetica, sans-serif;
+}
+.menu ul li a:hover{
+   
+    color: #fdaf06;
+}
+
+img{
+    width: 200px;
+    border: radi;
+}
+
+
+  .img_A{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+  gap: 40px;
+
+
+
+
+  }
+.img_A .img_1{
+    border: 1px solid red;
+    margin-top: 300px;
+}
+.info{
+    width: 100%;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0303035b;
+}
+
+.card-container {
+    display: flex;
+    gap: 20px;
+}
+
+.card {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    opacity: 0;
+    transform: translateY(100%);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.buy-now-btn {
+    padding: 15px 20px;
+    font-size: 16px;
+    color: #fff;
+    /* From https://css.glass */
+background-color: rgba(0, 0, 0, 0.19);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.4px);
+-webkit-backdrop-filter: blur(3.4px);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    
+    transition: background-color 0.3s ease;
+    margin-bottom: 150px;
+}
+
+.buy-now-btn:hover {
+    background-color: #000000;
+}
+
+
+
+.card:hover .overlay {
+    opacity: 1;
+    transform: translateY(0);
+}
